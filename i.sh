@@ -130,7 +130,8 @@ ssl_certificate_key   cert/$domain/ecc.key;
 
       local url=https://$domain:8443
       echo "
-$url  'mysite';" >> server/allowed-sites.conf
+$url  'mysite'
+$url  'demo-hk';" >> server/allowed-sites.conf
 
       log "证书申请完成，重启服务 ..."
       server/run.sh reload
