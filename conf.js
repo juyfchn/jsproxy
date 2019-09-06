@@ -11,14 +11,6 @@ jsproxy_config({
   },
 
   // 节点配置
-  node_map: {
-    'demo-hk': {
-      label: '演示服务-香港节点',
-      lines: {
-        // 主机:权重
-        'hk.jufxf.com:8443': 1,
-      }
-    },
     'mysite': {
       label: '当前站点',
       lines: {
